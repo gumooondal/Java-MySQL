@@ -33,7 +33,7 @@ try{
 }
 %>
 </head>
-<body>
+<body onload="setJoinDate()">
 
 	<jsp:include page="header.jsp" />
 	

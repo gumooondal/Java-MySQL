@@ -45,3 +45,31 @@ function memberSearch(){
 function modify(){
 	alert("회원정보수정이 완료되었습니다!");
 }
+
+function deletePost(){
+	// 사용자에게 확인 메시지 표시
+	var userConfirmed = confirm("삭제하시겠습니까?");
+
+	// 사용자가 확인 버튼을 눌렀을 경우만 삭제 작업 수행
+	if (userConfirmed) {
+	    // 삭제 작업을 여기에 추가하세요
+	    alert("삭제가 완료되었습니다.");
+	} else {
+	    // 취소 버튼을 눌렀을 경우
+	    alert("삭제가 취소되었습니다.");
+		return false;
+	}
+}
+
+function setJoinDate() {
+		var today = new Date();
+		var year = today.getFullYear();
+		var month = String(today.getMonth() + 1).padStart(2, '0'); // 월은 0부터 시작하므로 +1
+		var day = String(today.getDate()).padStart(2, '0');
+		var formattedDate = year + '-' + month + '-' + day;
+
+		// input 요소에 현재 날짜를 설정
+		document.getElementsByName("joindate")[0].value = formattedDate;
+     }
+	 
+	 

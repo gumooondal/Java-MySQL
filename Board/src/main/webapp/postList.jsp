@@ -8,6 +8,7 @@
 <meta charset="UTF-8">
 <title>post</title>
 </head>
+<script type="text/javascript" src="check.js"></script>
 <body>
 
 
@@ -46,7 +47,7 @@ try{
 					<td><%=rs.getString("membname") %></td>
 					<td><%=rs.getDate("creationdate") %></td>
 					<td><a href="modifyPost.jsp?mod_postno=<%=rs.getInt("postno") %>">수정</a></td>
-					<td><a href="deletePost.jsp?mod_postno=<%=rs.getInt("postno") %>">삭제</a></td>
+					<td><a href="deletePost.jsp?mod_postno=<%=rs.getInt("postno") %>" onclick="return deletePost()">삭제</a></td>
 				</tr>
 <%
 	}
