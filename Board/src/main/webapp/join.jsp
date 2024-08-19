@@ -72,7 +72,7 @@ try{
 				<tr>
 					<td colspan="2">
 						<input type="submit" value="등록" onclick="return joinCheck()"> &nbsp&nbsp&nbsp&nbsp
-					
+						<input type="button" value="조회" onclick="return memberSearch()">
 					</td>
 				</tr>
 			</table>
