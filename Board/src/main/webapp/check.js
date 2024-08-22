@@ -46,19 +46,20 @@ function modify(){
 	alert("회원정보수정이 완료되었습니다!");
 }
 
-function deletePost(){
-	// 사용자에게 확인 메시지 표시
-	var userConfirmed = confirm("삭제하시겠습니까?");
-
-	// 사용자가 확인 버튼을 눌렀을 경우만 삭제 작업 수행
-	if (userConfirmed) {
-	    // 삭제 작업을 여기에 추가하세요
-	    alert("삭제가 완료되었습니다.");
-	} else {
-	    // 취소 버튼을 눌렀을 경우
-	    alert("삭제가 취소되었습니다.");
-		return false;
-	}
+function deletePost(postno) {
+    // 사용자에게 확인 메시지 표시
+    var userConfirmed = confirm("삭제하시겠습니까?");
+    
+    // 사용자가 확인 버튼을 눌렀을 경우만 삭제 작업 수행
+    if (userConfirmed) {
+        // 삭제 요청을 서버로 전송
+        window.location.href = 'deletePost.jsp?del_postno=' + postno;
+        return true; // 페이지 리다이렉션 허용
+    } else {
+        // 취소 버튼을 눌렀을 경우
+        alert("삭제가 취소되었습니다.");
+        return false; // 페이지 리다이렉션 차단
+    }
 }
 
 function setJoinDate() {

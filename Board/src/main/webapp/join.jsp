@@ -43,7 +43,8 @@ try{
 		<h2 style="text-align: center">
 			<b>게시판 회원 등록</b>			
 		</h2>
-		<form name="frm" style="display:flex; align-items:center; justify-content:center; text-align:center;">
+		<form method="post" action="action.jsp" name="frm" style="display:flex; align-items:center; justify-content:center; text-align:center;">
+			<input type="hidden" name="mode" value="insert">
 			<table border="1">
 				<tr>
 					<td>회원번호(자동발생)</td>
