@@ -9,7 +9,7 @@
 **개발 환경**
 
 * Java
-* MySQL
 * JSP
+* MySQL
 * Apache Tomcat
 
