@@ -2,16 +2,16 @@
 
 This is a sample project to demonstrate how to use GitHub features.
 
-**Features:**
+**프로젝트 개요**
 
-* **Feature 1:** Description
-* **Feature 2:** Description
+* **Feature 1:** 가장 기본적인 CRUD 기능을 구현한 게시판
+* **Feature 2:** 스크립트릿을 활용하여 JSP 페이지에서 서버 사이드 로직을 직접 작성
+* **Feature 3:** 간단하고 직관적인 구조를 가지고 있어 데이터의 요청과 처리 과정을 쉽게 추적가능
 
 **Tech Stack:**
 
-* Python
-* Django
-* React
+* Java
+* MySQL
+* JSP
+* Apache Tomcat
 
-[![GitHub stars](https://img.shields.io/github/stars/your-username/your-repo?style=social)](https://github.com/your-username/your-repo)
-[![GitHub forks](https://img.shields.io/github/forks/your-username/your-repo?style=social)](https://github.com/your-username/your-repo)
