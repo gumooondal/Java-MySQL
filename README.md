@@ -1,6 +1,4 @@
-# My Awesome Project
-
-This is a sample project to demonstrate how to use GitHub features.
+# 게시판
 
 **프로젝트 개요**
 
